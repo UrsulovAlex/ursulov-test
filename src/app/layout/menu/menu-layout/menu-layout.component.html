@@ -1,0 +1,7 @@
+<div>
+  <ul class="list-unstyled">
+    @for (item of data; track item) {
+      <app-menu-item [data]="item" [themeItem] = 'theme'></app-menu-item>
+    }
+  </ul>
+</div>

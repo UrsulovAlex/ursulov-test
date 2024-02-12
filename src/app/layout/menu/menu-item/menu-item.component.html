@@ -1,0 +1,24 @@
+@if (data.children?.length) {
+  <li class="parent-li" [class]="themeItem">
+    <a routerLink="{{data.route}}" routerLinkActive="current">
+      <i class="pe-2" [class]="data.icon"></i>{{data.title}}</a>
+      <i expandMenu class="ps-1 bi bi-caret-down-fill"></i>
+    <ul class="list-unstyled ps-4 submenu">
+      @for (child of data.children; track child) {
+        <li [class]="themeItem">
+          <a routerLink="{{child.route}}" routerLinkActive="current">
+            <i class="pe-2" [class]="child.icon"></i>{{child.title}}</a>
+        </li>
+      }
+    </ul>
+  </li>
+} @else {
+  <li [class]="themeItem">
+    <a routerLink="{{data.route}}" routerLinkActive="current">
+      <i class="pe-2" [class]="data.icon"></i>{{data.title}}</a>
+  </li>
+}
+
+
+
+

@@ -1,0 +1,28 @@
+li.light a, 
+li.dark a {
+    text-decoration: none;
+}
+
+a.current {
+    font-weight: bold;
+}
+
+.bi-caret-down-fill {
+    cursor: pointer;
+} 
+
+li.light, li.light a {
+    color: white;
+}
+
+li.dark, li.dark a {
+    color: black;
+}
+
+li.parent-li > .submenu {
+    display: none;
+}
+li.active > .submenu {
+    display: block;
+    list-style: none;
+}

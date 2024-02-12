@@ -1,0 +1,13 @@
+<app-header></app-header>
+<main class="container-fluid my-3">
+  <section class="row">
+    <aside class="col-md-3 d-none d-md-block">
+      <app-menu-layout [data]="dataMenu" ></app-menu-layout>
+    </aside>
+    <section class="col-md-9">
+      <router-outlet></router-outlet>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </section>
+  </section>
+</main>
+<app-footer></app-footer>
